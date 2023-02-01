@@ -1,0 +1,151 @@
+:root {
+  --logo-color-blue: rgb(34, 64, 114);
+  --logo-color-brown-ish: rgb(203, 144, 33);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.6rem;
+  overscroll-behavior-y: none;
+  /* padding: 10rem; */
+  height: 100vh;
+  padding: 1.4rem;
+
+  display: flex;
+}
+
+/* #FFF SIDE BAR */
+.sidebar {
+  flex-basis: 50rem;
+  background: linear-gradient(rgb(18, 34, 62), #1864aba1);
+  padding: 3rem 5rem 4rem 5rem;
+  color: #e7f5ff;
+  /* padding: 4rem; */
+}
+
+/* .sidebar::-webkit-scrollbar {
+  width: 0;
+} */
+.logo-div {
+  height: 80.4px;
+  width: 80.4px;
+  margin: 0 auto;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #dbe4ff;
+  cursor: pointer;
+  transition: 0.7s all;
+  margin-bottom: 3rem;
+}
+
+.logo-div:hover {
+  box-shadow: 0px 1px 5px 1px #e7f5ff;
+}
+
+.main-logo {
+  display: block;
+  width: 80.4px;
+}
+
+/* INPUTS */
+
+.activity-container {
+  height: 77vh;
+  overflow: scroll;
+}
+
+.activity-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.activity {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background-color: #dbe4ff9f;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: 1s;
+}
+.hidden {
+  display: none;
+}
+
+.form_button {
+  display: none;
+}
+.select {
+  cursor: pointer;
+}
+.input {
+  list-style: none;
+  align-self: center;
+  justify-self: center;
+}
+
+.label {
+  display: inline-block;
+  width: 6.5rem;
+  margin-right: 0.8rem;
+  font-weight: 600;
+}
+
+.text-input {
+  max-width: 7rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #fff;
+}
+
+.result {
+  display: grid;
+  row-gap: 1.4rem;
+  column-gap: 0.4rem;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #dbe4ff57;
+  cursor: pointer;
+}
+
+.res-header {
+  grid-column: 1 / -1;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.indicator-min-spm,
+.indicator-min-m {
+  text-align: center;
+}
+
+#map {
+  background-color: #1864aba1;
+  flex-grow: 1;
+}
+
+/* POP UPS */
+
+.popup {
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}

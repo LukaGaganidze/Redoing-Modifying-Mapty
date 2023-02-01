@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      defer
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <script defer src="script.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  -->
+    <!-- #FFF SIDE BAR  -->
+    <div class="sidebar">
+      <!-- LOGO -->
+      <div class="logo-div">
+        <img
+          src="logos/the-rocket-logo.png"
+          alt="Logo"
+          width="80.4"
+          height="56.4"
+          class="main-logo"
+        />
+      </div>
+
+      <!-- SIDEBAR ACTIVITY -->
+      <div class="activity-container">
+        <!-- INPUTS -->
+        <form class="activity hidden">
+          <div class="input type-input">
+            <label class="label" for="type">Type</label>
+            <select class="text-input select">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+          <div class="input distance-input">
+            <label class="label" for="duration">Duration</label>
+            <input
+              class="text-input"
+              type="text"
+              placeholder="min"
+              id="duration"
+            />
+          </div>
+          <div class="input duration-input">
+            <label class="label" for="distance">Distance</label>
+            <input
+              class="text-input"
+              type="text"
+              placeholder="km"
+              id="distance"
+            />
+          </div>
+          <div class="input elev-gain-input hidden">
+            <label class="label" for="elevation">elevation</label>
+            <input
+              class="text-input"
+              type="text"
+              placeholder="meters"
+              id="elevation"
+            />
+          </div>
+          <div class="input cadance-input">
+            <label class="label" for="cadance">Cadence</label>
+            <input
+              class="text-input"
+              type="text"
+              placeholder="step/min"
+              id="cadance"
+            />
+          </div>
+
+          <button class="form_button">ok</button>
+        </form>
+
+        <!-- RESULTS -->
+        <!-- <div class="result results-running" data-id="">
+          <p class="res-header">Running on January 8</p>
+          <p class="indicator-km">🏃‍♂️ distance</p>
+          <p class="indicator-min">⏱ 2 MIN</p>
+          <p class="indicator-min-km">⚡️ 1.0 MIN/KM</p>
+          <p class="indicator-min-spm">🦶🏼 2 SPM</p>
+        </div> -->
+
+        <!-- <div class="result result-cycling">
+          <p class="res-header">Cycling on January 8</p>
+          <p class="indicator-km">🚴‍♀️ 1 KM</p>
+          <p class="indicator-min">⏱ 1 MIN</p>
+          <p class="indicator-km-h">⚡️ 60.0 KM/H</p>
+          <p class="indicator-min-m">⛰ 1 M</p>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- #FFF #THE MAP  -->
+    <div id="map"></div>
+  </body>
+</html>
